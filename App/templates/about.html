@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/.../" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated backend developer with a strong technical background. I thrive on the challenges of designing and implementing the architecture that powers web and mobile applications. My love for coding runs deep, and I enjoy working with databases, servers, and APIs to create efficient and robust systems. I believe in the power of clean, well-structured code and the importance of optimizing performance.
+                   Sudoku is my guilty pleasure, and I take great satisfaction in solving these intricate puzzles. The logical challenges of Sudoku captivate me, and it's a great way to unwind and keep my problem-solving skills sharp. Just like in programming, I appreciate the step-by-step approach to finding solutions.
+                   Above all, my family means the world to me. They provide me with unwavering support and are the foundation of my life. I cherish the moments we spend together and recognize the importance of maintaining strong family bonds. They inspire me to work hard and pursue my passions with dedication.                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links active-link"  onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>
+                            <ul>
+                                <li>JavaScript - intermediate</li>
+                                <li>Python - basic</li>
+                            </ul>
+                        </li>
+                            <li><span>Proficient in statistical softwares</span><br>
+                            
+                                <ul>
+                                    <li>R - advance</li>
+                                    <li>Stata - intermediate</li>
+                                    <li>SPSS - basic </li>
+                            </ul></li>
+                        <li><span>Database Management </span><br> 
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                            </ul>  </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents active-tab" id="Experience">
+                    <ul>
+                        <li><span>Finance Secretary</span><br>My extensive proficiency in Microsoft Office has 
+                            ensured the timely completion of tasks and simplified the monthly report writing process . 
+                            This role has enhanced financial management in daily operations. 
+                            </li>
+                        <li><span>Volunteering</span><br>Volunteered as a teaching assistant at a public institution in 
+                            Nairobi. As the team leader, I effectively applied my strong organizational abilities. Our efforts 
+                            resulted in the successful organization of a youth forum, which drew 50 participants from the 
+                            local community. 
+                        </li>
+                        <li><span>Hackathon</span><br>I participated in a Girls in Tech bootcamp, where I collaborated in a hackathon project aligned with Sustainable Development Goal 4 (SDG 4). Our team created an educational application that provides a library of reading materials.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>University of Nairobi</span><br> Bachelor's Degree in Economics and Statistics</li>
+                    
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+    {% endblock %}
